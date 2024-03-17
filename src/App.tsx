@@ -1,4 +1,5 @@
 import Button from './components/Button';
+import Container from './components/Container';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Input from './components/Input';
@@ -57,6 +58,10 @@ function App() {
         console.log('input event', event);
         
       }}/>
+
+      <hr />
+
+      <Container style={{color: 'blue', border: '1px solid black', display: 'flex'}}/>
 
     </div>
   );
