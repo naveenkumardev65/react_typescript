@@ -1,5 +1,7 @@
+import Button from './components/Button';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
+import Input from './components/Input';
 import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
@@ -25,7 +27,6 @@ function App() {
       first: 'gomathi',
       last: 'shankar'
     },
-
   ]
   return (
     <div className="App">
@@ -41,6 +42,22 @@ function App() {
         <Heading>The Oscar goes to ....</Heading>
       </Oscar>
       <Greet name={'Kumar'} isLoggedIn={false}/>
+
+      <hr />
+
+      <Button handleClick={() => {
+        console.log('Btn clicked');
+        
+      }} handleClickEvent={(e, id) => {
+        console.log('e', e, id);
+        
+      }}/>
+
+      <Input value='test' handleChange={(event) => {
+        console.log('input event', event);
+        
+      }}/>
+
     </div>
   );
 }
