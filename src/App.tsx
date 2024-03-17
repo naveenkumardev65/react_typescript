@@ -1,6 +1,9 @@
 import Greet from './components/Greet';
+import Heading from './components/Heading';
+import Oscar from './components/Oscar';
 import Person from './components/Person';
 import PersonList from './components/PersonList';
+import Status from './components/Status';
 
 function App() {
 
@@ -29,6 +32,15 @@ function App() {
       <Greet name='Naveen' messageCount={10} isLoggedIn={true}/>
       <Person name={personName}/>
       <PersonList names={nameList}/>
+      <hr />
+
+      <Status status={false}/>
+      <Heading>Hello this children</Heading>
+
+      <Oscar>
+        <Heading>The Oscar goes to ....</Heading>
+      </Oscar>
+      <Greet name={'Kumar'} isLoggedIn={false}/>
     </div>
   );
 }
