@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
+import Greet from './components/Greet';
 
 function App() {
   return (
     <div className="App">
-      <h2>Welcome to react + typescript project</h2>
+      <Greet name='Naveen'/>
     </div>
   );
 }
